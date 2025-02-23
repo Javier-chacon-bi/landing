@@ -46,22 +46,22 @@
 
 
         .content {
-            position: fixed;
-            top: 72px;
+			position:relative;
             left: 50%;
             transform: translateX(-50%);
             width: 98%;
             max-width: 1200px;
+			margin: 20px auto;
             text-align: left;
             padding: 10px 20px;
             background-color: #ffffff;
             z-index: 1000;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    gap: 20px; /* Space between image and text */
-	    flex-wrap: wrap; /* Ensures responsiveness */
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    gap: 20px; /* Space between image and text */
+		    flex-wrap: wrap; /* Ensures responsiveness */
         }
 	
 	.content img {
@@ -77,7 +77,7 @@
 	    
         .carousel-container {
             flex-grow: 1;
-            margin-top: 220px;
+            margin-top: 20px;
             width: 100%;
             max-width: 1200px;
             height: 500px; /* Fixed height for the carousel */
@@ -134,7 +134,6 @@
 		.table-container {
 		    width: 90%;
 		    max-width: 600px;
-		    margin: 20px auto;
 		    padding: 10px;
 		    background-color: #fff;
 		    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -164,7 +163,7 @@
 		
         @media (max-width: 768px) {
             .carousel-container {
-                height: 300px; /* Adjust height for smaller screens */
+                height: 480px; /* Adjust height for smaller screens */
             }
         }
     </style>

@@ -113,8 +113,40 @@
             padding: 10px;
             margin-top: 10px;
             position: relative;
+    		font-size: 0.5em; /* Reduce font size */
         }
-
+	
+		.table-container {
+		    width: 90%;
+		    max-width: 600px;
+		    margin: 20px auto;
+		    padding: 10px;
+		    background-color: #fff;
+		    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		    border-radius: 8px;
+		}
+		
+		table {
+		    width: 100%;
+		    border-collapse: collapse;
+		    text-align: left;
+		}
+		
+		th, td {
+		    padding: 10px;
+		    border-bottom: 1px solid #ddd;
+		}
+		
+		th {
+		    background-color: #497a5a;
+		    color: white;
+		    font-weight: bold;
+		}
+		
+		tr:last-child td {
+		    border-bottom: none;
+		}
+		
         @media (max-width: 768px) {
             .carousel-container {
                 height: 300px; /* Adjust height for smaller screens */
@@ -143,30 +175,32 @@
         <button class="carousel-button left" onclick="scrollCarousel('left')">&#8249;</button>
         <button class="carousel-button right" onclick="scrollCarousel('right')">&#8250;</button>
     </div>
-
-    <table class="coffee-table">
-        <tr>
-            <th>Characteristic</th>
-            <th>Details</th>
-        </tr>
-        <tr>
-            <td>Origin</td>
-            <td>Cantaclaro coffee farms</td>
-        </tr>
-        <tr>
-            <td>Altitude</td>
-            <td>1830 masl</td>
-        </tr>
-        <tr>
-            <td>Acidity</td>
-            <td>Sweet, zesty</td>
-        </tr>
-        <tr>
-            <td>Notes</td>
-            <td>Yoghurt, caramel, red fruits</td>
-        </tr>
-    </table>
 	
+	<div class="table-container">
+	    <table class="coffee-table">
+	        <tr>
+	            <th>Characteristic</th>
+	            <th>Details</th>
+	        </tr>
+	        <tr>
+	            <td>Origin</td>
+	            <td>Cantaclaro coffee farms</td>
+	        </tr>
+	        <tr>
+	            <td>Altitude</td>
+	            <td>1830 masl</td>
+	        </tr>
+	        <tr>
+	            <td>Acidity</td>
+	            <td>Sweet, zesty</td>
+	        </tr>
+	        <tr>
+	            <td>Notes</td>
+	            <td>Yoghurt, caramel, red fruits</td>
+	        </tr>
+	    </table>
+	</div>
+
     <footer>
         <p>© 2025 Tunjo Smart Solutions. Todos los derechos reservados.</p>
     </footer>
